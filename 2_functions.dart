@@ -6,9 +6,11 @@ void main() {
   print(age);
 }
 
-String greeting() {
-  return "hello world";
-}
+// String greeting() {
+//   return "hello world";
+// }
+
+String greeting() => "hello world";
 
 int getAge() {
   return 30;
