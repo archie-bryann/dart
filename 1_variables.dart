@@ -9,4 +9,8 @@ void main() {
 
   bool isNight = false;
   print(isNight);
+
+  dynamic name2 = "chun-li";
+  name2 = 30;
+  print(name2);
 }
