@@ -4,6 +4,10 @@ void main() {
 
   User userTwo = User('mario', 30);
   print(userTwo.username);
+
+  SuperUser userThree = SuperUser("yoshi", 20);
+  print(userThree.username);
+  userThree.publish();
 }
 
 class User {
@@ -19,6 +23,12 @@ class User {
   void login() {
     print('$username logged in');
   }
+}
 
-  // 17:02
+class SuperUser extends User {
+  SuperUser(String username, int age) : super(username, age);
+
+  void publish() {
+    print('published update');
+  }
 }
